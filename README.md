@@ -14,7 +14,7 @@ sudo chmod +x snx_install.sh
 sudo ./snx_install.sh
  ```
 ### should appear 'Installation successfull'
-#initiate with
+# initiate with
 ```bash
 snx -s 'server' -u 'user'
 ```
