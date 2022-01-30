@@ -18,3 +18,7 @@ sudo ./snx_install_linux30.sh
 ```bash
 snx -s 'server' -u 'user'
 ```
+### to disconnect
+```bash
+snx -d
+```
