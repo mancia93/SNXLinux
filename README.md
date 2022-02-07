@@ -1,6 +1,6 @@
-# SNXLinux
-install SNX vpn on Ubuntu &amp; Ubuntu based distros
+# Install SNX vpn
 
+## Ubuntu
 ### Get required packages
 ```bash
 sudo dpkg --add-architecture i386
@@ -25,3 +25,26 @@ snx -s 'server' -u 'user'
 ```bash
 snx -d
 ```
+## Arch
+### Get required packages from AUR (ignore the red error flag)
+```bash
+yay -S snx
+```
+### Download file https://supportcenter.checkpoint.com/supportcenter/portal/user/anon/page/default.psml/media-type/html?action=portlets.DCFileAction&eventSubmit_doGetdcdetails&fileid=22824
+
+```bash
+
+cd /path/to snx_install_linux30.sh
+chmod a+rx snx_install_linux30.sh
+sudo ./snx_install_linux30.sh
+ ```
+ > should appear 'Installation successfull'
+### Initiate with
+```bash
+snx -s 'server' -u 'user'
+```
+> if succesfull you'll be prompted for password input
+
+### To disconnect
+```bash
+snx -d
